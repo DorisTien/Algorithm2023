@@ -39,7 +39,7 @@ if __name__ == '__main__':
                 m[i][j] = 0  # Set a default value of 0
                 p[i][j] = -1  # Set a default value of -1
 
-print(m[0][n-1])
+print("Min:" + str(m[0][n-1]))
 print(p[0][n-1])
 print_matrix(p)
 

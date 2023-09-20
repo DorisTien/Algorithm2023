@@ -40,5 +40,5 @@ if __name__ == '__main__':
     ]
     p= make_p_matrix(7)
     floyd(7,w_matrix,d_matrix,p)
-    print(d_matrix[1][0])
-    print_via_point(0,6,p)
+    print(d_matrix[6][2])
+    print_via_point(6,2,p)

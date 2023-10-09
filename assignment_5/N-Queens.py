@@ -40,7 +40,7 @@ class Solution:
         for candidate in self.get_candidates(state,n):
             #recurse
             state.append(candidate)
-            #print('promissing +1:'+str(level)) # promising node of each level !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            #print('promissing +1:'+str(level)) # promising node of each level 
             self.listp[level] +=1
             self.search(state,solutions,n,level+1)
             state.pop()
@@ -49,7 +49,7 @@ class Solution:
     def state_to_string(self, state, n):
         ret = []
         for i in state:
-            string = '('+str(i) + ',' + str(n - i - 1)+')'
+            string = '('+str(i+1) + ',' + str(n - i)+')'
             ret.append(string)
         return ret
 

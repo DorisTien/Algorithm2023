@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce3e5b6d-c543-4046-8e61-1ad5da21a0d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Graph_Coloring.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph_Coloring.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/N-Queens.py" beforeDir="false" afterPath="$PROJECT_DIR$/N-Queens.py" afterDir="false" />
+    <list default="true" id="f5446620-6dd3-4888-b3c0-7eca6b38f299" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_5/Graph_Coloring.py" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_5/Graph_Coloring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_5/N-Queens.py" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_5/N-Queens.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,27 +15,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2WTRMSYETT9aLcfZUfdmmZXPv0Z" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2X5KFZJlUrNCFTCr1SMQveiYnuO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="assignment_5" />
+      <module name="Project_1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -58,17 +60,27 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ce3e5b6d-c543-4046-8e61-1ad5da21a0d9" name="Changes" comment="" />
-      <created>1696754534197</created>
+      <changelist id="f5446620-6dd3-4888-b3c0-7eca6b38f299" name="Changes" comment="" />
+      <created>1697913398029</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1696754534197</updated>
-      <workItem from="1696754535454" duration="5000" />
-      <workItem from="1697306528600" duration="26000" />
+      <updated>1697913398029</updated>
+      <workItem from="1697913399253" duration="5000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

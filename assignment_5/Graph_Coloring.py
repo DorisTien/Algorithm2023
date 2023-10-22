@@ -38,7 +38,7 @@ if __name__ == '__main__':
     colorlist =[0]*len(mygraph)
     solution(mygraph, colorlist,1,color_amount)
     if if_solution(colorlist):
-        print('Solution is as follow: ')
+        print('Solution of '+str(color_amount)+' colors is as follow: ')
         for j in range(1, len(mygraph)):
             print('Area A'+str(j)+' is in frequency No.'+str(colorlist[j]))
     else:

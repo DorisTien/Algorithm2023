@@ -2,6 +2,7 @@
 class Solution:
     def __init__(self, listp, n):
         # Initialize attributes here
+        #listp: promising list
         self.listp = n*[0]
     
     def solveNQueens(self, n):
@@ -29,7 +30,6 @@ class Solution:
             candidates.discard(colum-dist)
         return candidates
     
-    #promissing_list = [0] * n
     def search (self, state, solutions, n,level):
         
         if self.is_valid_state(state,n):
@@ -55,7 +55,7 @@ class Solution:
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    for i in range(2,7):
+    for i in range(2,9):
         n = i
         solution_instance = Solution(list,n)
         # Call the 'solveNQueens' method to find solutions

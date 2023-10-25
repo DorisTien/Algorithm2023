@@ -13,16 +13,30 @@ def randomindex(a,b):
     return result
 
 def randomsort(n,list_S):
-    excahnge_iteration=0
+    iteration=0
     while not sorted(n,list_S):
         i = randomindex(0,n-1)
         j= randomindex (0,n-1)
+        iteration+=1
         #print('i:'+str(i)+'; j:'+str(j))
         if i<j and list_S[i]>list_S[j]:
             list_S[i], list_S[j] = list_S[j], list_S[i]
-            excahnge_iteration+=1
+            iteration+=1
             #print('swap is done')
-    return excahnge_iteration
+    return iteration
+
+def randomsort2(n,list_S):
+    iteration=0
+    while not sorted(n,list_S):
+        i = randomindex(0,n-1)
+        j= randomindex (i,n-1)
+        iteration+=1
+        #print('i:'+str(i)+'; j:'+str(j))
+        if i<j and list_S[i]>list_S[j]:
+            list_S[i], list_S[j] = list_S[j], list_S[i]
+            iteration+=1
+            #print('swap is done')
+    return iteration
 
 def experiment(size,times):
     total_iteration=0
@@ -34,6 +48,18 @@ def experiment(size,times):
             total_iteration += sub_interation
     average= total_iteration/times
     return average
+
+def experiment2(size,times):
+    total_iteration=0
+    for time in range(times):
+        arr = [random.randint(1, 100) for _ in range(size)]
+        #print(' '.join(map(str, arr)))
+        while not sorted(size,arr):
+            sub_interation =randomsort2(size,arr)
+            total_iteration += sub_interation
+    average= total_iteration/times
+    return average
+
 
 def plot(sizes_list,values_list):
     # Plotting
@@ -56,14 +82,35 @@ def plot(sizes_list,values_list):
 if __name__ == '__main__':
 
     sizes = [10, 20, 30, 40, 50, 100, 200, 400, 800, 1600]
-    '''
+
     list_results= []
-    
+    '''
     for i in sizes:
-        result=experiment(i,1)
+        result=experiment(i,2)
         list_results.append(result)
     for elem in list_results:
         print(elem)    
-  '''
-    values = [11.0, 38.0, 79.0, 124.0, 160.0, 366.0, 871.0, 1976.0, 4211.0, 8784.0]
-    plot(sizes,values)
+    '''
+    values = [177.0, 1931.5, 2550.0, 9617.5, 11998.0, 53287.5, 314298.0, 1014111.5, 3951446.0, 15541535.0]
+    #plot(sizes,values)
+    compare=[]
+    for i in sizes:
+        result=i*i/2
+        compare.append(result)
+
+    compare2=[]
+    for i in sizes:
+        result=i*i/4
+        compare2.append(result)
+    '''
+    list_results2= []
+    for i in sizes:
+        result=experiment2(i,2)
+        list_results2.append(result)
+    for elem in list_results2:
+        print(elem)
+    '''
+    values2 = [279.0, 1222.5, 3064.5, 4674.0, 6644.5, 41799.5, 181293.0, 800356.5, 2527792.5, 9655031.5]
+    comparison = [50.0, 200.0, 450.0, 800.0, 1250.0, 5000.0, 20000.0, 80000.0, 320000.0, 1280000.0]
+
+    print(compare2)

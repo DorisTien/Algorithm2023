@@ -95,22 +95,22 @@ if __name__ == '__main__':
     #plot(sizes,values)
     compare=[]
     for i in sizes:
-        result=i*i/2
+        result=4*i*i*i*i
         compare.append(result)
 
     compare2=[]
     for i in sizes:
-        result=i*i/4
+        result=4*i*i*i
         compare2.append(result)
-    '''
+
     list_results2= []
     for i in sizes:
         result=experiment2(i,2)
         list_results2.append(result)
     for elem in list_results2:
         print(elem)
-    '''
+
     values2 = [279.0, 1222.5, 3064.5, 4674.0, 6644.5, 41799.5, 181293.0, 800356.5, 2527792.5, 9655031.5]
-    comparison = [50.0, 200.0, 450.0, 800.0, 1250.0, 5000.0, 20000.0, 80000.0, 320000.0, 1280000.0]
+ 
 
     print(compare2)

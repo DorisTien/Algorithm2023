@@ -84,13 +84,13 @@ if __name__ == '__main__':
     sizes = [10, 20, 30, 40, 50, 100, 200, 400, 800, 1600]
 
     list_results= []
-    '''
+    
     for i in sizes:
         result=experiment(i,2)
         list_results.append(result)
     for elem in list_results:
         print(elem)    
-    '''
+    
     values = [177.0, 1931.5, 2550.0, 9617.5, 11998.0, 53287.5, 314298.0, 1014111.5, 3951446.0, 15541535.0]
     #plot(sizes,values)
     compare=[]

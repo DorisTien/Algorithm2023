@@ -31,13 +31,14 @@ def longest_balanced_subsequence_string(s):
     return mm*2
 
 
-test_cases = ["(())", "((())())", "(()))", "())", "(", "())(",' ']
+test_cases = [[('(', '(', ')', ')', '(', ')')], [('(', '(', ')', ')')], [('(', ')', ')')], [('(')], [('(', ')', ')', '(')], []]
+
 for test in test_cases:
     if is_balanced_parentheses(test):
         print(f"The string '{test}' is balanced.")
     else:
         print(f"The string '{test}' is not balanced.")
 
-tests=['((())(()))()','()()()','((()))','()()(())']
+tests=[('(', '(', ')', '(', ')', '(', ')', ')', '(', ')'), ('(', ')', '(', ')', '(', ')'), ('(', '(', '(', ')', ')', ')'), ('(', ')', '(', ')', '(', ')', ')')]
 for test in tests:
     print('longest_balanced_subsequence_string:'+str(longest_balanced_subsequence_string(test)))
